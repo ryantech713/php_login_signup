@@ -16,8 +16,8 @@
             <div class="d-flex">
                 <!-- SHOW DROPDOWN IF USER IS LOGGED IN -->
                 <?php
-                if(isset($_SESSION["loggedin"])){
-                ?>
+                if(isset($_SESSION["loggedin"])) {
+                    ?>
                     <div class="dropdown" style="margin-right: 50px;">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-person-circle me-2"></i><?php echo $_SESSION["username"]; ?>
@@ -29,12 +29,12 @@
                         </ul>
                     </div>
                 <!-- SHOW LOGIN AND SIGNUP BUTTONS IF USER IS NOT LOGGED IN -->
-                <?php
+                    <?php
                 } else {
-                ?>
+                    ?>
                     <a class="btn btn-primary ms-md-2" href="signup_form.php">Signup</a>
                     <a class="btn btn-dark ms-md-2" href="login_form.php" >Login</a>
-                <?php
+                    <?php
                 }
                 ?>
             </div>
